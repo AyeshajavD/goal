@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Dailymanagmentapp",
+    "slug": "Dailymanagmentapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.webp",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo.webp",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.webp",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.webp"
+    }
+  }
+}
