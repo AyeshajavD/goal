@@ -11,7 +11,7 @@ const GoalInput = (props) => {
   return (
     <Modal visible={props.visible} animationType="slide">
       <View style={styles.modalContainer}>
-        <Text style={styles.heading}>Add Your To-Do Work</Text>
+        <Text style={styles.heading}>Add Your Goal</Text>
         <TextInput
           placeholder="Write Something"
           onChangeText={goalInputHandler}
@@ -32,11 +32,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#d3d3f7', // Light purple background color
+    backgroundColor: '#d3d3f7',
   },
   heading: {
     fontSize: 18,
     marginBottom: 10,
+    fontWeight: "500",
+    fontStyle: "italic"
   },
   input: {
     width: 300,
@@ -45,6 +47,7 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     padding: 10,
     marginBottom: 10,
+    borderRadius: 10
   },
   buttonContainer: {
     flexDirection: 'row',

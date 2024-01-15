@@ -1,24 +1,25 @@
+// GoalItem.js
 import React from 'react';
-import {View, Text, TouchableOpacity, Modal} from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
-const GoalItem = props => {
-    return(
-    
+const GoalItem = (props) => {
+  return (
     <TouchableOpacity onPress={props.onDelete.bind(this, props.id)}>
-    <View
+      <View
         style={{
-          backgroundColor: '#B0B0B0',
+          backgroundColor: '#3498db',
+          borderRadius: 10,
+          color: 'white',
           height: 50,
           padding: 10,
           margin: 5,
-          justifyContent: 'center'
+          justifyContent: 'center',
         }}
-        >
-            
-            <Text>{props.title}</Text>
-    </View>
+      >
+        <Text style={[{ color: 'white', fontWeight: '600' }, props.textStyle]}>{props.title}</Text>
+      </View>
     </TouchableOpacity>
-    )
-}
+  );
+};
 
 export default GoalItem;
